@@ -57,12 +57,12 @@ fun NoteItem(
                 modifier = Modifier
                     .clickable(MutableInteractionSource(), null) { onDeleteClick() }
             )
-            Spacer(modifier = Modifier.width(16.dp))
-            Text(text = note.content, fontWeight = FontWeight.Light)
-            Spacer(modifier = Modifier.width(16.dp))
-            Text(text = formattedDate,
-                color = DarkGray,
-                modifier = Modifier.align(Alignment.CenterVertically))
         }
+        Spacer(modifier = Modifier.height(16.dp))
+        Text(text = note.content, fontWeight = FontWeight.Light)
+        Spacer(modifier = Modifier.height(16.dp))
+        Text(text = formattedDate,
+            color = DarkGray,
+            modifier = Modifier.align(Alignment.End))
     }
 }

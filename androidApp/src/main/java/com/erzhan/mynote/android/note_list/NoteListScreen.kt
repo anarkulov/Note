@@ -40,9 +40,13 @@ fun NoteListScreen(
         floatingActionButton = {
             FloatingActionButton(
                 onClick = { /*TODO*/ },
-                backgroundColor = Color.Black
+                backgroundColor = Color.Blue
             ) {
-                Icon(imageVector = Icons.Default.Add, contentDescription = "Add")
+                Icon(
+                    imageVector = Icons.Default.Add,
+                    contentDescription = "Add",
+                    tint = Color.White
+                )
             }
         }
     ) { padding ->
@@ -63,7 +67,7 @@ fun NoteListScreen(
                     onCloseClick = viewModel::onToggleSearch,
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(90.dp)
+                        .height(60.dp)
                 )
                 this@Column.AnimatedVisibility(
                     visible = !state.isSearchActive,

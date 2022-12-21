@@ -69,7 +69,7 @@ fun NoteListScreen(
                     onCloseClick = viewModel::onToggleSearch,
                     modifier = Modifier
                         .fillMaxWidth()
-                        .height(80.dp)
+                        .height(90.dp)
                 )
                 this@Column.AnimatedVisibility(
                     visible = !state.isSearchActive,

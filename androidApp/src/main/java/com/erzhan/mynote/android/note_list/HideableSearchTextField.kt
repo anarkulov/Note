@@ -38,14 +38,14 @@ fun HideableSearchTextField(
             OutlinedTextField(
                 value = text,
                 onValueChange = onTextChanged,
-                shape = RoundedCornerShape(40.dp),
+                shape = RoundedCornerShape(50.dp),
                 placeholder = {
                     Text(text = "Search")
                 },
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(vertical = 8.dp)
-                    .padding(start = 16.dp, end = 40.dp)
+                    .padding(16.dp)
+                    .padding(end = 40.dp)
             )
         }
 
